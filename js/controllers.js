@@ -13,6 +13,8 @@ amigosControllers.controller('amigoEditCtrl', ['$scope','$routeParams', 'amigosF
     $scope.amigo=amigosFact.find($routeParams.id);
     $scope.btnUpdate=function(){
       amigosFact.save($routeParams.id,$scope.amigo);
+      console.log($routeParams.id);
+      console.log($scope.amigo);
 
     }
     //console.log($scope.amigo);
