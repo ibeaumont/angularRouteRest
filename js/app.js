@@ -31,7 +31,7 @@ amigoApp.config(['$routeProvider',
           return resource1.query();
           },
       find: function(id){
-        var resource2= $resource('http://midenda-igor.herokuapp.com/producto/:id', { id: '@_id' }, {
+        var resource2= $resource('http://midenda-igor.herokuapp.com/producto/:id', {
           query: {method:'GET', 
           get: {method:'GET', 
           post: {method:'POST'},
@@ -39,7 +39,7 @@ amigoApp.config(['$routeProvider',
           
     });
    
-          return resource2.get({},{'id': id});
+          return resource2.get({},{'_id': id});
       }
     };
 });  
