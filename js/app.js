@@ -34,7 +34,7 @@ amigoApp.config(['$routeProvider',
     update: {method: 'PUT'}
     });
    
-          return resource2.query({},{'_id': id});
+          return resource2.get({},{'id': id});
       }
     };
 });  
