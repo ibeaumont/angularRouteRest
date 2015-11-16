@@ -32,7 +32,7 @@ amigoApp.config(['$routeProvider',
           return resource1.query();
           },
       find: function(id){
-          return resource2.get({'id': id});
+          return resource2.get({'_id': id});
       }
     };
 });  
