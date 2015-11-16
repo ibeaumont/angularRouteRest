@@ -47,7 +47,7 @@ amigoApp.config(['$routeProvider',
         });
 
    
-          return resource2.save({'_id': id},data);
+          return resource.save({'_id': id},data);
       }
 
     };
