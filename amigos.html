@@ -1,0 +1,5 @@
+<ul>
+	<li ng-repeat="amigo in amigos"><a href="#/amigo/{{amigo._id}}">{{amigo.nombre}}</a>
+		<strong>{{amigo.cantidad}}</strong><button class="btn btn-danger btn-xs" ng-click="delete($index)">Borrar</button></li>
+	
+</ul>
