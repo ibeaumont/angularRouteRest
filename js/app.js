@@ -36,11 +36,20 @@ amigoApp.config(['$routeProvider',
           get: {method:'GET'}, 
           post: {method:'POST'},
           update: {method: 'PUT'}
-          
-    });
+        });
+
    
           return resource2.get({},{'_id': id});
+      },
+      save:function(id,data){
+        var resource= $resource('http://midenda-igor.herokuapp.com/producto/:id',{id:'@_id'}, {
+          update: {method: 'PUT'}
+        });
+
+   
+          return resource2.save({'_id': id},);
       }
+
     };
 });  
   
