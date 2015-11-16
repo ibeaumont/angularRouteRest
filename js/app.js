@@ -24,7 +24,7 @@ amigoApp.config(['$routeProvider',
    var resource1= $resource('http://midenda-igor.herokuapp.com/productos:id', { id: '@_id' }, {
     update: {method: 'PUT'}
     });
-   var resource2= $resource('http://midenda-igor.herokuapp.com/producto/id', { id: '@_id' }, {
+   var resource2= $resource('http://midenda-igor.herokuapp.com/producto:id', { id: '@_id' }, {
     update: {method: 'PUT'}
     });
    return {
