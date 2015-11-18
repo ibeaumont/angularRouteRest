@@ -1,10 +1,16 @@
 
 <form class="form-horizontal">
 	<div class="form-group">
-		<label for="txtNombre">Nombre:</label>
-		<input type="text" class="text" ng-model="amigo.nombre"/>
-		<label for="txtNombre">Tlfnoa:</label>
-		<input type="text" class="text" ng-model="amigo.cantidad"/>
+		<label for="txtNombre" class="col-sm-4">Nombre:</label>
+		<div class="col-sm-8">
+			<input type="text" class="text" ng-model="amigo.nombre"/>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="txtNombre" class="col-sm-4">Tlfnoa:</label>
+		<div class="col-sm-8">
+			<input type="text" class="text" ng-model="amigo.cantidad"/>
+		</div>
 	</div>
 	<div class="form-group">
 		<button ng-click="btnUpdate()" class="btn btn-danger btn-md">Guardar</button>
